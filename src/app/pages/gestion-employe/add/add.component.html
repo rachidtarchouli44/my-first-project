@@ -1,0 +1,28 @@
+<form [formGroup]="formEmployee" (ngSubmit)="submit()">
+ <div class="form-group">  
+<label for="Nom">Nom Employee</label>
+<input    formControlName="employeeFirstName"  name="employeeFirstName" class="form-control"  type="text">
+</div>
+<div class="form-group">  
+<label for="Prenom">Prenom</label>
+<input   formControlName="employeeLastName" name="employeeLastName" class="form-control" type="text">
+</div>
+
+<div class="form-group">  
+<label for="Phone">Numero de telephone</label>
+<input formControlName="employeePhoneNumber" name="employeePhoneNumber" class="form-control" type="text">
+</div>
+
+<div class="form-group">  
+<label for="Department">Department</label>
+<select   formControlName="departmentId"   class="form-control" name="department"  id="department" >
+    <option *ngFor="let d of listDepartments " value="{{d.id}}"> {{d.departmentName}}</option>
+</select>
+</div>
+
+<div class="form-group">  
+    
+    <Button type="submit" class="btn btn-outline-success mt-2">Envoyer</Button>
+</div>
+
+</form>

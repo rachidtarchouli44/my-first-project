@@ -1,0 +1,9 @@
+<form [formGroup]="departForm" (submit)="submit()">
+    <div class="form-group">
+      <label for="departement">Nom de département</label>
+      <input        
+      formControlName="departmentName" type="text" id="departement" class="form-control" placeholder="saisissez le nom du département">
+    </div>
+    <button class="btn btn-outline-primary mt-3 btn-sm">Ajouter</button>
+ </form>
+ 

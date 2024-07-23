@@ -1,0 +1,15 @@
+<table  class="table">
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom de departement</th>
+            </tr>
+        </thead>
+          <tbody>
+                <tr *ngFor="let d of departments">
+                 <td>{{d.id}}</td>
+                 <td>{{d.departmentName}}</td>
+                </tr>
+          </tbody>
+</table>
